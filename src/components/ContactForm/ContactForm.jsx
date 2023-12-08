@@ -5,6 +5,7 @@ import {
   StyledInput,
   StyledBtn,
 } from './ContactForm.styled';
+import { nanoid } from 'nanoid';
 
 export class ContactForm extends React.Component {
   state = {
@@ -22,7 +23,7 @@ export class ContactForm extends React.Component {
     const { name, number } = this.state;
 
     const newContact = {
-      id: crypto.randomUUID(),
+      id: nanoid(),
       name,
       number,
     };

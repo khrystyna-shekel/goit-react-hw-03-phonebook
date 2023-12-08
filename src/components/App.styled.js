@@ -6,7 +6,7 @@ export const StyledWrapper = styled.div`
   padding: 20px;
   box-shadow: 1px 2px 4px rgb(204, 203, 203);
   width: 400px;
-  height: 600px;
+  height: auto;
 
   & h1 {
     margin-bottom: 15px;
